@@ -1,6 +1,6 @@
 package com.pbansal;
 
-public class UIControl {
+public abstract class UIControl {
     public boolean isEnabled = true;
 
 //    public UIControl() {
@@ -14,9 +14,7 @@ public class UIControl {
 //    }
 
 
-    public void render(){
-
-    }
+    public abstract void render();
 
     public void enable(){
         isEnabled = true;

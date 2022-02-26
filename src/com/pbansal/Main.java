@@ -68,6 +68,12 @@ public class Main {
 //        System.out.println(point2.hashCode());
 
         // Concept of polymorphism
+//        UIControl[] controls = {new TextBox(), new CheckBox()};
+//        for (var control : controls)
+//            control.render();
+
+        // Concept of abstract class
+//        UIControl[] controls = {new UIControl(), new TextBox(), new CheckBox()};
         UIControl[] controls = {new TextBox(), new CheckBox()};
         for (var control : controls)
             control.render();
