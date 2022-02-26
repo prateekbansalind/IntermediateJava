@@ -1,5 +1,7 @@
 package com.pbansal;
 
+import static com.pbansal.ObjectClass.objectClassDemo;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,26 +22,28 @@ public class Main {
         //var browser = new Browser();
         //browser.Navigate("www.codeeasy.com");
 
-        // Mortgage Calculator
-        // Principal : 1000000
-        // Annual Interest Rate : 3.92
-        // Period (Years) : 30
-        // Mortgage : $472.81
+        // Calculator.calculator();
 
-        int principal = (int) Console.readNumber("Enter a principal amount: ", 1000, 1000000);
-        byte yearlyInterest = (byte) Console.readNumber("Enter a annual interest rate: ", 1, 30);
-        byte year = (byte) Console.readNumber("Enter period of year: ", 1, 30);
+        // object from UI control class
+//        var control = new UIControl();
+//        control.enable();
+//        System.out.println(control.isEnabled);
 
-        // Create calculator object
-        var calculator = new MortgageCalculator(principal, year, yearlyInterest);
-        // Create report Object
-        var report = new MortgageReport(calculator);
+        // object from textBox class which is also inheriting from UI control class
+//        var controlTextBox = new TextBox();
+//        controlTextBox.isEnabled();
+//        System.out.println(controlTextBox.isEnabled());
 
-        // Calculate mortgage
-        report.printMortgage();
+        // object class - refer object class file
+        // objectClassDemo();
 
-        // Calculate payment schedule
-        report.printPaymentSchedule();
+        // Constructor Demo - Using UIControl and Text Box class
+//        var textBox = new TextBox();
+        // output
+        // UIControl
+        // TextBox
+        // As TextBox inherits from UIControl class, that's why UIControl object initiate first and then TextBox object.
+
 
 
 
