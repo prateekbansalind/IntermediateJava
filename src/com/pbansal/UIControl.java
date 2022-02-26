@@ -8,9 +8,14 @@ public class UIControl {
 //                                           // they call all the remaining methods. // main menu > code > generator (shortcut to call constructor)
 //    }
 
-    public UIControl(boolean isEnabled) {
-        System.out.println("UIControl");
-        this.isEnabled = isEnabled;
+//    public UIControl(boolean isEnabled) {
+//        System.out.println("UIControl");
+//        this.isEnabled = isEnabled;
+//    }
+
+
+    public void render(){
+
     }
 
     public void enable(){

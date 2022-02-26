@@ -6,16 +6,21 @@ public class TextBox extends UIControl{
     // string method on this class object and if the declaration of the field is missing.
     private String text = "";
 
-    public TextBox() {
-        super(true);  // as this TextBox class doesn't directly have the isEnabled field that's why we used super method which will help out to call the field of parent class.
-        System.out.println("TextBox");
-    }
+//    public TextBox() {
+//        super(true);  // as this TextBox class doesn't directly have the isEnabled field that's why we used super method which will help out to call the field of parent class.
+//        System.out.println("TextBox");
+//    }
 
     // overriding method introduction
 //    @Override
 //    public String toString(){
 //        return "Hello World";
 //    }
+
+    @Override
+    public void render(){
+        System.out.println("Render TextBox");
+    }
 
 
     public void setText(String text){

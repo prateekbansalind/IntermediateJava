@@ -55,18 +55,22 @@ public class Main {
 //        show(control);
 
         // Concept of comparing objects
-        var point1 = new Point(1, 2);
-        var point2 = new Point(1, 2);
-        System.out.println(point1 == point2); // they are comparing the reference address not the value
-        System.out.println(point1.equals(point2));
+//        var point1 = new Point(1, 2);
+//        var point2 = new Point(1, 2);
+//        System.out.println(point1 == point2); // they are comparing the reference address not the value
+//        System.out.println(point1.equals(point2));
+//
+//        // now we override the equals method to compare the values not the reference address.
+//        System.out.println(point1.equals(point2)); // true now as we override the equals method.
+//
+//        // Override hashCode method to get the same value.
+//        System.out.println(point1.hashCode());
+//        System.out.println(point2.hashCode());
 
-        // now we override the equals method to compare the values not the reference address.
-        System.out.println(point1.equals(point2)); // true now as we override the equals method.
-
-        // Override hashCode method to get the same value.
-        System.out.println(point1.hashCode());
-        System.out.println(point2.hashCode());
-
+        // Concept of polymorphism
+        UIControl[] controls = {new TextBox(), new CheckBox()};
+        for (var control : controls)
+            control.render();
     }
 
 //    public static void show(UIControl control){
