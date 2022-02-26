@@ -1,6 +1,6 @@
 package com.pbansal;
 
-public class TextBox extends UIControl{
+public final class TextBox extends UIControl{
     // public String text; // Field - This line of code if not assigned with empty value as
     // shown in the below line can cause a error called "NullPointerException" in case of calling
     // string method on this class object and if the declaration of the field is missing.
@@ -34,3 +34,12 @@ public class TextBox extends UIControl{
     }
 
 }
+
+// public class MyTextBox extends TextBox{
+    // The MyTextBox class cannot be inherited from the TextBox class as the TextBox class is declared with final keyword.
+    // final keyword basically prevents any class to be further extended to implemented to a child class.
+    // this is not as widely used as it prevents some important concepts of OOPS like polymorphism and inheritance.
+    // Whereas this String class is declared with final keyword as it cannot be implemented to any child class
+    // This is made with the assumption that any method in the string class like upperClass should create another instance of string object
+    // as they are immutable in nature.
+// }
