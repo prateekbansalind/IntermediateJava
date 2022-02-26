@@ -44,8 +44,24 @@ public class Main {
         // TextBox
         // As TextBox inherits from UIControl class, that's why UIControl object initiate first and then TextBox object.
 
+        // Override introduction
+//        var textBox1 = new TextBox();
+//        // System.out.println(textBox1.toString()); // no need to explicitly call the toString() method as println method output result in string format.
+//        System.out.println(textBox1);
 
-
+        // upcasting and downcast
+        var control = new UIControl(true);
+        var textBox = new TextBox();
+        show(control);
 
     }
+
+    public static void show(UIControl control){
+        if (control instanceof TextBox){
+        var textBox = (TextBox) control;
+        textBox.setText("Hello World");}
+        System.out.println(control);
+    }
 }
+
+

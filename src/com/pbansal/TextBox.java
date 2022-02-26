@@ -11,6 +11,13 @@ public class TextBox extends UIControl{
         System.out.println("TextBox");
     }
 
+    // overriding method introduction
+//    @Override
+//    public String toString(){
+//        return "Hello World";
+//    }
+
+
     public void setText(String text){
         // text = text;       // this line creates confusion.
         this.text = text;
