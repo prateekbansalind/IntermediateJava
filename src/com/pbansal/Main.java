@@ -74,9 +74,17 @@ public class Main {
 
         // Concept of abstract class
 //        UIControl[] controls = {new UIControl(), new TextBox(), new CheckBox()};
-        UIControl[] controls = {new TextBox(), new CheckBox()};
-        for (var control : controls)
-            control.render();
+//        UIControl[] controls = {new TextBox(), new CheckBox()};
+//        for (var control : controls)
+//            control.render();
+
+        // Dependency Injection - Constructor Injection
+        var calculator = new TaxCalculator2018(100_000);
+        var report = new TaxReport(calculator);
+        report.show();
+        // this is a poor man's approach as we don't want to make an object in the main class all the time
+        // right now we only have two classes that's why we create in the main method, but usually we use framework to take care of this.
+
     }
 
 //    public static void show(UIControl control){
