@@ -85,6 +85,10 @@ public class Main {
         // this is a poor man's approach as we don't want to make an object in the main class all the time
         // right now we only have two classes that's why we create in the main method, but usually we use framework to take care of this.
 
+        // Dependency Injection - Setter injection
+        report.setCalculator(new TaxCalculator2019());
+        report.show();
+
     }
 
 //    public static void show(UIControl control){

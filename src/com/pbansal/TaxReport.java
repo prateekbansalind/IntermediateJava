@@ -13,5 +13,9 @@ public class TaxReport {
         System.out.println(tax);
     }
 
+    public void setCalculator(TaxCalculator calculator) {
+        this.calculator = calculator;
+    }
+
     // here in this class, we can see that this class TaxReport is tightly coupled with taxCalculator.
 }
